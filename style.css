@@ -4,20 +4,28 @@
   scroll-behavior: smooth;
 }
 .home{
-  padding-top: 20px;
-  height: 725px;
+  height: 660px;
   background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(/images/Biryani.webp);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   text-decoration: none;
+  margin-top:85px ;
 }
-nav{
+.nav-bar{
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   text-decoration: none;
+  position: fixed;
+  background-image: url(/images/nav-bg.jpg);
+  width: 100%;
+  height: 85px;
+  margin-top: -85px;
+  background-color: black;
+  z-index: 1;
 }
 .nav-links{
   color: white;
@@ -33,13 +41,12 @@ nav{
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-
 }
 .nav-links ul li::after{
   content: '';
   width: 0%;
   height: 3px;
-  background: orange;
+  background: #ec0f00;
   display:block;
   margin: auto;
   transition: 0.4s ease-in-out;
@@ -53,15 +60,51 @@ nav{
 .nav-links ul li :hover{
   cursor: pointer;
 }
-.logo{
-  height: 120px;
-  width: 120px;
-  margin-left: 100px;
-  margin-right: -50px;
+.title1{
+  margin-left: 150px;
+  padding-left: 70px;
+  margin-right: 0px;
+}
+.home-card{
+  height: 350px;
+  width:  1000px;
+  position: relative;
+  top: 150px;
+  left: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+}
+.home-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+  font-size: 55px;
+  color:#ec0f00;
+  font-family: "Sigmar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.home-card-p{
+  display: flex;
+  height: 60px;
+  width: 280px;
+  font-size: 30px;
+  color: #ec0f00;
+  align-items: center;
+  justify-content: center;
+  border-top: solid #ec0f00 2px;
+  border-bottom: solid #ec0f00 2px;
 }
 .whats-new{
   margin-top: -10px;
-  height: 753px;
+  height: 680px;
   text-align: center;
   background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(/images/bg-2.jpg);
   background-repeat: no-repeat;
@@ -70,14 +113,15 @@ nav{
 }
 .whats-new-title{
   font-size: 50px;
-  padding-top: 40px;
+  padding-top: 25px;
+
 }
 .whats-new-subtitle{
   margin-top: 10px;
 }
 .three-items{
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 240px;
+  margin-right: 240px;
   margin-top: 60px;
   display: flex;
   flex-direction: row;
@@ -85,14 +129,14 @@ nav{
   justify-content: space-between;
 }
 .iteam-1{
-  height: 450px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
   margin-right: 10px;
   transition: 0.8s;
 }
 .iteam-1-img{
-  height: 450px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
   border-radius: 70px;
 }
 .iteam-1:hover{
@@ -101,14 +145,14 @@ nav{
 }
 .iteam-2{
 
-  height: 450px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
   margin-left: 10px;
   transition: 0.8s;
 }
 .iteam-2-img{
-  height: 450px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
   border-radius: 70px;
 }
 .iteam-2:hover{
@@ -116,14 +160,14 @@ nav{
   cursor: pointer;
 }
 .iteam-3{
-  height: 450px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
   margin-left: 20px;
   transition: 0.8s;
 }
 .iteam-3-img{
-  height: 450px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
   border-radius: 70px;
 }
 .iteam-3:hover{
@@ -131,15 +175,19 @@ nav{
   cursor: pointer;
 }
 .Website-title{
-  color: orange;
+  color: #ec0f00;
   font-size: 40px;
   margin-left: 635px;
   padding-top: 20px;
+  font-family: "Sigmar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .menu-title{
   margin-left: 700px;
   color: white; 
   font-size: 35px;
+
 }
 .menu{
   height: 1250px;
@@ -148,7 +196,7 @@ nav{
   background-size: cover;
 }
 .menu-grid{
-  height: 1200px;
+  height: 1000px;
   display: grid;
   grid-template-columns: 250px 250px 250px 250px 250px;
   grid-template-rows: 330px 330px 330px;
@@ -164,6 +212,7 @@ nav{
   background-color: white;
   border-radius: 10px;
   transition: 0.6s ease-in-out;
+ 
 }
 .menu-iteam:hover{
   scale: 1.12;
@@ -195,10 +244,89 @@ nav{
  display: flex;
 }
 .about{
-  height: 740px;
-  background-color: red;
+  height: 680px;
+  padding-top: 90px;
+  background-image: url(/images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-card{
+  height: 500px;
+  width: 1000px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 400px;
+  background-color: rgba(255, 255, 255,1);
+}
+.about-matter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height:500px;
+  width: 550px;
+  background-color: black;
+  color: white;
+  border-radius: 400px;
+}
+.about-matter-p{
+  height: 350px;
+  width: 400px;
+  font-size: 17px;
+  margin-left: 30px;
+  margin-bottom: -20px;
+  font-weight: 400;
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+.about-img{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 40px;
+  height:450px;
+  width: 450px;
+  margin-top: 10px;
+  margin-left: 0px;
+  transition:0.5s ease-in-out;
+}
+.about-img:hover{
+  scale: 1.08;
 }
 .contact-us{
-  height: 745px;
-  background-color: blue
+  height: 570px;
+  padding-top: 100px;
+  background-color: bisque;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    background-image: url(/images/chef.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 900px;
+}
+.contact-us-h1{
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+}
+.contact-us-text{
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  width: 500px;
+  margin-left: 200px;
+}
+.contact-us-p{
+  font-size: 20px;
+  margin-bottom: 40px;
+  height: 45px;
 }
