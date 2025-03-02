@@ -4,12 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resturant Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
   <section class="home" data-section="home">
-    <nav>
-      <a href="#"><img class="logo" src="/images/STK-20250222-WA0001.webp"></a>
+    <nav class="nav-bar">
+      <h1 class="title1" style="color:#ec0f00;font-family: Sigmar, sans-serif;font-weight: 400;font-style: normal;font-size: 40px;margin-left: 0px;">FOODIE HUB</h1>
       <div class="nav-links">
         <ul>
           <li><a href="#" data-target="home" style="text-decoration: none; color: white;">HOME</a></li>
@@ -20,23 +29,34 @@
         </ul>
       </div>
     </nav>
+    <div class="home-card">
+      <div class="home-card-p">Good Food</div>
+      <div class="home-title">
+        FOODIE HUB
+        <div style="font-size: 30px;padding-top: 10px;font-weight: bold;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Hyderabad / Since 1976
+        </div>
+      </div>
+      <div class="home-card-p">Great Times</div>
+
+    </div>
   </section>
 
   <section class="whats-new" data-section="whats-new">
     <h1 class="whats-new-title">WHAT'S NEW</h1>
-    <h2 class="whats-new-subtitle">Top 3 Best selling items in <a class="title" style="color: orange;" >FOODIEHUB</a>
+    <h2 class="whats-new-subtitle">Top 3 Best selling items in <a class="title" style="color:#ec0f00; font-family:Sigmar, sans-serif; font-weight: 400;font-style: normal;" >FOODIEHUB</a>
     <div class="three-items">
       <div class="iteam-1">
         <img class="iteam-1-img" src="/images/iteam-1.webp">
-        <h2>CHICKEN BIRYANI</h2>
+        <h3>CHICKEN BIRYANI</h3>
       </div>
       <div class="iteam-2">
         <img class="iteam-2-img" src="/images/iteam-2.jpg">
-        <h2>BURGER</h2>
+        <h3>BURGER</h3>
       </div>
       <div class="iteam-3">
         <img class="iteam-3-img" src="/images/iteam-3.jpg">
-        <h2>SHAWARAMA</h2>
+        <h3>SHAWARAMA</h3>
       </div>
     </div>
   </section>
@@ -70,7 +90,7 @@
     </div>
     <div class="menu-iteam">
       <img class="menu-img" src="/images/menu-iteam-3.webp">
-      <h1 class="iteam-name" style="text-align: center; font-size: 21px;">THANDORY CHICKEN </h1>
+      <h1 class="iteam-name" style="text-align: center; font-size: 21px;">TANDOORI CHICKEN </h1>
       <div class="rating-price">
       <div class="price" style="font-size: larger;font-weight: 900;">
         PRICE: &#8377; 319
@@ -227,10 +247,33 @@
   </div>
   </section>
   <section class="about" data-section="about">
+    <div class="about-card">
+      <div class="about-matter">
+        <h1 style="display: inline;font-size: 35px;font-weight: 900;margin-top: 30px;">ABOUT US</h1>
+        <P class="about-matter-p">
+          Welcome to FOODIE HUB, where passion for great food meets a warm and inviting 
+          dining experience! At FOODIE HUB, we believe in serving mouthwatering dishes crafted
+          with the freshest ingredients, blending rich flavors and culinary traditions to delight
+          your taste buds. With a cozy ambiance and top-notch hospitality, FOODIE HUB is the perfect place to gather with friends, family, or colleagues.
+          Join us and indulge in a dining experience that’s all about great food, great company, and great moments!
+        </P>
+      </div>
+      <img class="about-img" src="/images/about-card.png">
+    </div>
     
   </section>
   <section class="contact-us" data-section="contact-us">
-
+  <img src="images/location.png" style="height: 45px;width: 40px;position: relative;top: 220px;left: 200px;background-color: bisque;">
+  <img src="/images/call.png" style="height: 45px;width: 45px;position: relative;top: 275px;left: 160px;">
+  <img src="/images/mail.png" style="height: 40px;width: 50px;position: relative;top: 332px;left: 105px;">
+    <div class="contact-us-text">
+      <h1 class="contact-us-h1">CONTACT US</h1>
+      <p style="font-size: 20px;margin-bottom: 25px;">We’re here to help and answer any questions you
+        might have. We look forward to hearing from you!</p>
+      <div style="font-size: 20px;margin-bottom: 15px;height: 50px;align-items: center;display: flex;margin-left: 50px;">No.12 Jubilee Hills Hyderabad</div>
+      <div style="font-size: 20px;margin-bottom: 20px;height: 50px;align-items: center;display: flex;margin-left: 50px;"> +91 9515079191</div>
+      <div style="font-size: 20px;margin-bottom: 15px;height: 50px;align-items: center;display: flex;margin-left: 50px"> FoodieHub@gmail.com</div>
+    </div>
   </section>
   <script src="script.js"></script>
 </body>
