@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           if (section) {
               window.scrollTo({
-                  top: section.offsetTop - 0, // Adjust for fixed navbar
+                  top: section.offsetTop - 65, // Adjust for fixed navbar
                   behavior: "smooth"
               });
           }
